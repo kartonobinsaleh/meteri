@@ -82,13 +82,15 @@ Ubah file `server.js` untuk menambahkan middleware error:
 - Data ditemukan:
 ```json
 {
-  "status": "success",
-  "data": {
-    "fullname": "Samsul Bahri",
-    "username": "samsul",
-    "email": "samsul@example.com",
-    "role": "admin"
-  }
+    "status": "success",
+    "message": "User created successfully",
+    "data": {
+        "id": 4,
+        "fullname": "Bambang Suryadi 2",
+        "username": "bambangjoss",
+        "email": "bambangs@gmail.com",
+        "role": "user"
+    }
 }
 
 ```
