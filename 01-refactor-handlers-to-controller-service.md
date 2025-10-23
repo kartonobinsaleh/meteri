@@ -84,7 +84,8 @@ src/
 File ini berisi logika bisnis dan query ke database.
 Buka file nya di `src/services/userService.js`.
 
-![alt text](./assets/refactor/image-1.png)
+<img src="./assets/refactor/image-1.png" alt="refactor diagram" width="600" height="400" />
+
 
 ### - File `userController.js`
 File ini akan menjadi penghubung antara route dan service.
@@ -92,14 +93,16 @@ Controller bertugas menerima request, memanggil service, lalu mengembalikan resp
 
 Buka file nya di `src/controllers/userController.js`.
 
-![alt text](./assets/refactor/image-2.png)
+<img src="./assets/refactor/image-2.png" alt="refactor diagram" width="600" height="600" />
+
 
 ## 5. Update Route untuk Menggunakan Controller
 Sekarang ubah `src/routes/userRoute.js` agar tidak lagi memakai `handlers/usersHandler.js`, melainkan `controllers/userController.js`.
 
 Sekarang buka file nya di `src/routes/userRoute.js`.
 
-![alt text](./assets/refactor/image-3.png)
+<img src="./assets/refactor/image-3.png" alt="refactor diagram" width="600" height="400" />
+
 
 💡 Catatan:
 > Untuk sementara, cukup ubah endpoint GET /users dan GET /users/:id.
