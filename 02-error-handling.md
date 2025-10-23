@@ -15,7 +15,7 @@ src/
 
 Dan isi file `responseError.js` dengan kode berikut:
 
-![alt text](./assets/error-handling/image-1.png)
+<img src="./assets/error-handling/image-1.png" alt="error handling" width="600" height="400" />
 
 Penjelasan
 > **ResponseError** adalah custom error class yang menyimpan status HTTP dan pesan error.
@@ -32,7 +32,7 @@ src/
 
 Lalu isi file `errorMiddleware.js` dengan kode berikut:
 
-![alt text](./assets/error-handling/image-2.png)
+<img src="./assets/error-handling/image-2.png" alt="error handling" width="600" height="400" />
 
 Penjelasan:
 > Middleware ini menangani semua error yang dilempar dari controller atau service.
@@ -43,7 +43,7 @@ Penjelasan:
 
 Di file `userService.js` sebelumnya, tambahkan `ResponseError` yang sudah dibuat:
 
-![alt text](./assets/error-handling/image-3.png)
+<img src="./assets/error-handling/image-3.png" alt="error handling" width="600" height="600" />
 
 
 💡 Komentar perubahan:
@@ -55,7 +55,7 @@ Di file `userService.js` sebelumnya, tambahkan `ResponseError` yang sudah dibuat
 
 Di file `userController.js` sebelumnya, ubah menjadi:
 
-![alt text](./assets/error-handling/image-4.png)
+<img src="./assets/error-handling/image-4.png" alt="error handling" width="600" height="600" />
 
 
 💡 Komentar perubahan:
@@ -68,7 +68,7 @@ Di file `userController.js` sebelumnya, ubah menjadi:
 
 Ubah file `server.js` untuk menambahkan middleware error:
 
-![alt text](./assets/error-handling/image-5.png)
+<img src="./assets/error-handling/image-5.png" alt="error handling" width="600" height="600" />
 
 
 💡 Komentar perubahan:
